@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:screenOrientation="portrait"
+	tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<com.serenegiant.widget.UVCCameraTextureView
+			android:id="@+id/camera_view"
+			android:layout_width="match_parent"
+			android:layout_height="285dp"
+			android:layout_gravity="center"
+			android:layout_centerInParent="true"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<ImageView
+			android:id="@+id/usb_imageView"
+			android:layout_width="match_parent"
+			android:layout_height="285dp"
+			android:contentDescription="TODO"
+			android:src="@color/GHOSTWHITE" />
+
+	</LinearLayout>
+
+
+	<ImageButton
+		android:id="@+id/imageButton"
+		android:layout_width="50dp"
+		android:layout_height="0dp"
+		android:layout_marginBottom="10dp"
+		android:background="@mipmap/ic_transparent"
+		android:scaleType="fitCenter"
+		android:src="@drawable/btn_new_shutter"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		android:contentDescription="TODO" />
+
+</android.support.constraint.ConstraintLayout>
